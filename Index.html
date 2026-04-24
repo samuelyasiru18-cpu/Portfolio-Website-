@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samuel Yasiru</title>
+  <link rel="stylesheet" href="Web.css" />
+</head>
+<body>
+
+<nav>
+  <div class="logo">Samuel<span>.</span></div>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a onclick="showPage('home'); closeMenu()">Home</a></li>
+    <li><a onclick="showPage('blog'); closeMenu()">Blog</a></li>
+    <li><a onclick="showPage('contact'); closeMenu()">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HOME -->
+<div id="home" class="page">
+  <section class="hero">
+    <div class="hero-photo-panel">
+      <img src="Assests/WhatsApp Image 2026-04-16 at 23.45.06.jpeg" alt="Samuel Yasiru" />
+    </div>
+    <div class="hero-text-panel">
+      <h1>Hi, I'm Samuel</h1>
+      <p class="subtitle">FinTech Enthusiast</p>
+      <p class="hero-desc">First-year undergraduate at the University of Moratuwa, studying Information Technology and Management. I love exploring where technology meets real-world business problems, especially in fintech.</p>
+      <div class="hero-btns">
+        <button class="btn btn-light" onclick="showPage('contact')">Get In Touch</button>
+        <button class="btn btn-outline" onclick="scrollToAbout()">Learn More</button>
+        <a class="btn btn-outline" href="https://drive.google.com/file/d/1rlbP_nfZElxitdT8ToDmxJ6VJOCvjUSY/view?usp=drive_link" target="_blank">Download CV</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <p class="section-label">About Me</p>
+    <h2>Passionate about FinTech and Modern Tech</h2>
+    <div class="tags">
+      <span class="tag-pill">BSc IT and Management · University of Moratuwa</span>
+      <span class="tag-pill">Colombo, Sri Lanka</span>
+      <span class="tag-pill">FinTech Enthusiast</span>
+    </div>
+    <p class="bio-text">Hi! I'm Samuel Yasiru, a first-year undergraduate at the University of Moratuwa pursuing a BSc (Hons) in Information Technology Management. I'm particularly drawn to fintech, where business thinking and technology come together to build things that actually matter.</p>
+    <div class="cards">
+      <div class="card">
+        <p class="card-title">Skills</p>
+        <div class="skill-row">
+          <div class="skill-meta"><span>Programming (Python and C)</span><span>70%</span></div>
+          <div class="bar"><div class="bar-fill" style="width:70%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-meta"><span>Web Development</span><span>70%</span></div>
+          <div class="bar"><div class="bar-fill" style="width:70%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-meta"><span>Microsoft Office</span><span>90%</span></div>
+          <div class="bar"><div class="bar-fill" style="width:90%"></div></div>
+        </div>
+      </div>
+      <div class="card">
+        <p class="card-title">Experience</p>
+        <ul class="timeline">
+          <li>
+            <span class="tl-date">Sep – Nov 2025</span>
+            <span class="tl-title">Admin and Research Assistant</span>
+            <span class="tl-sub">Infintel Research (Pvt) Limited</span>
+          </li>
+          <li>
+            <span class="tl-date">May – Aug 2025</span>
+            <span class="tl-title">Admin Assistant</span>
+            <span class="tl-sub">Central Bank of Sri Lanka</span>
+          </li>
+          <li>
+            <span class="tl-date">Jan – Apr 2025</span>
+            <span class="tl-title">Private Tutoring</span>
+          </li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="card-title">Education</p>
+        <ul class="timeline">
+          <li>
+            <span class="tl-date">Current</span>
+            <span class="tl-title">University of Moratuwa</span>
+            <span class="tl-sub">BSc IT and Management</span>
+          </li>
+          <li>
+            <span class="tl-title">Nalanda College Colombo 10</span>
+            <span class="tl-sub">Commerce Stream</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span class="logo">Samuel<span>.</span></span>
+    <p>2025 Samuel Yasiru Rashmitha. All rights reserved.</p>
+  </footer>
+</div>
+
+<!-- BLOG -->
+<div id="blog" class="page">
+  <div class="page-top">
+    <h1>Blog and Articles</h1>
+    <p>Thoughts on technology from an IT undergraduate. Published on Medium.</p>
+  </div>
+  <div class="blog-list">
+    <a class="blog-item" href="https://medium.com/@samuelyasiru18/sound-meets-computing-exploring-digital-audio-technology-6eb79a91de19" target="_blank">
+      <div class="blog-item-meta">
+        <span class="blog-tag">Audio Tech</span>
+        <span class="blog-date">2025 · 5 min read</span>
+      </div>
+      <h3>Sound Meets Computing: Exploring Digital Audio Technology</h3>
+      <p>What if every sound you hear is actually just data being decoded in real time?</p>
+      <span class="read-link">Read on Medium →</span>
+    </a>
+    <a class="blog-item" href="https://medium.com/@samuelyasiru18/from-flipbooks-to-virtual-reality-the-journey-of-animation-0e05df540b66" target="_blank">
+      <div class="blog-item-meta">
+        <span class="blog-tag">Animation</span>
+        <span class="blog-date">April 2025 · 4 min read</span>
+      </div>
+      <h3>From Flipbooks to Virtual Reality: The Journey of Animation</h3>
+      <p>Ever wondered how simple flipbooks evolved into immersive virtual worlds?</p>
+      <span class="read-link">Read More →</span>
+    </a>
+    <a class="blog-item" href="https://medium.com/@samuelyasiru18/rendering-text-bitmap-vector-fonts-4d4942d32ed3" target="_blank">
+      <div class="blog-item-meta">
+        <span class="blog-tag">Multimedia</span>
+        <span class="blog-date">April 2025 · 4 min read</span>
+      </div>
+      <h3>Rendering Text: Bitmap and Vector Fonts</h3>
+      <p>Ever noticed why some text breaks when zoomed, but others stay crystal clear?</p>
+      <span class="read-link">Read More →</span>
+    </a>
+  </div>
+  <footer>
+    <span class="logo">Samuel<span>.</span></span>
+    <p>2025 Samuel Yasiru Rashmitha. All rights reserved.</p>
+  </footer>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="page">
+  <div class="page-top">
+    <h1>Get In Touch</h1>
+    <p>Whether it's a project, question, or just a chat — feel free to reach out.</p>
+  </div>
+  <div class="contact-wrap">
+    <div class="contact-left">
+      <p class="contact-detail"><strong>Email</strong> samuelyasiru18@gmail.com</p>
+      <p class="contact-detail"><strong>Location</strong> Colombo, Sri Lanka</p>
+      <p class="contact-detail"><strong>University</strong> University of Moratuwa, IT and M</p>
+      <p class="contact-detail"><strong>Response</strong> Usually within 24 hours</p>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/samuel-yasiru-005097354/" target="_blank" class="social-btn">
+          <img src="Assests/267-2670965_linkedin-icon-logo-png-transparent-linked-in-circle-logo.png" alt="LinkedIn" />
+        </a>
+        <a href="https://github.com/samuelyasiru18-cpu" target="_blank" class="social-btn">
+          <img src="Assests/github-computer-icons-logo-repository-png-favpng-3D6iEY0b391hz9PYJZqnvKTLT.jpg" alt="GitHub" />
+        </a>
+        <a href="https://medium.com/@samuelyasiru18" target="_blank" class="social-btn">
+          <img src="Assests/medium_logo_icon_189223.png" alt="Medium" />
+        </a>
+      </div>
+    </div>
+    <div class="contact-right">
+      <div class="field-row">
+        <div class="field">
+          <label>Name</label>
+          <input type="text" id="name" placeholder="Your full name" />
+        </div>
+        <div class="field">
+          <label>Email</label>
+          <input type="email" id="email" placeholder="you@example.com" />
+        </div>
+      </div>
+      <div class="field">
+        <label>Subject</label>
+        <input type="text" id="subject" placeholder="What is this about?" />
+      </div>
+      <div class="field">
+        <label>Message</label>
+        <textarea id="message" placeholder="Tell me about your project or idea..."></textarea>
+      </div>
+      <button class="send-btn" onclick="sendMessage()">Send Message</button>
+      <div id="success">Thanks for reaching out! I will get back to you within 24 hours.</div>
+    </div>
+  </div>
+  <footer>
+    <span class="logo">Samuel<span>.</span></span>
+    <p>2025 Samuel Yasiru Rashmitha. All rights reserved.</p>
+  </footer>
+</div>
+
+<script src="Web.js"></script>
+</body>
+</html>
